@@ -87,7 +87,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 echo "Admin";
     ?>
     UserID for Session:
-    <?php echo $this->session->userdata('userID'); ?> 
+	<?php echo $this->session->userdata('userID'); ?> 
+	<h2>
+    Logout:
+    </h2> 
+    <?php echo form_open('user/logout'); ?>
+    <button type="submit" class="btn btn-primary">Logout</button>
+	<?php echo form_close(); ?>
+	
     <h2>Logout all users</h2>
 
 
